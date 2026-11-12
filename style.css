@@ -1,0 +1,32 @@
+:root {
+  --fundo: #111318;
+  --cartao: #1a1d24;
+  --linha: #3a3f4d;
+  --texto: #f4f1e6;
+  --suave: #9aa1b0;
+  --ambar: #ffb24a;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font: 17px/1.65 "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+.pagina { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 48px; font-size: 14px; }
+nav a { color: var(--suave); text-decoration: none; }
+nav a:hover, nav a[aria-current] { color: var(--ambar); }
+h1, h2 { font-family: Anton, Impact, sans-serif; font-weight: 400; letter-spacing: 0.01em; line-height: 1.15; }
+h1 { font-size: clamp(36px, 8vw, 56px); margin: 0 0 16px; }
+h2 { font-size: 26px; margin: 40px 0 8px; color: var(--ambar); }
+p, li { color: var(--texto); }
+.lead { color: var(--suave); font-size: 18px; }
+a { color: var(--ambar); }
+ul { padding-left: 22px; }
+.canais { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin: 24px 0; }
+.canal { background: var(--cartao); border: 1px solid var(--linha); border-radius: 10px; padding: 20px; }
+.canal strong { display: block; font-family: Anton, Impact, sans-serif; font-weight: 400; font-size: 22px; }
+.canal span { color: var(--suave); font-size: 14px; }
+footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--linha); color: var(--suave); font-size: 13px; }
